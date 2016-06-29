@@ -27,6 +27,15 @@ a bit of testing, but it's possible I missed something.
 The Gradle dependency is available via [jCenter](https://bintray.com/drummer-aidan/maven/material-camera/view).
 jCenter is the default Maven repository used by Android Studio.
 
+You could add it to your `build.gradle` like this:
+```
+repositories {
+    ...
+    jcenter()
+    maven { url "https://dl.bintray.com/drummer-aidan/maven" }
+}
+```
+
 ### Dependency
 
 Add this in your module's `build.gradle` file:
